@@ -122,9 +122,19 @@
     max-width: 500px;
   }
 
+  .form-input {
+    height: 56px;
+  }
+
+  .form-text-area {
+    height: 104px;
+    margin-bottom: 32px;
+  }
+
   .app-form-teacher-group {
     flex-direction: row;
     column-gap: 16px;
+    margin-bottom: 32px;
   }
 
   .app-form-section-description {

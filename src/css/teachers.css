@@ -2,23 +2,21 @@
   text-align: center; 
 }
 
-.teachers-title {
+.section-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.13;
-  letter-spacing: -0.02em;
   margin-bottom: 16px;
   display: inline-block;
   color: var(--black);
-  text-align: center;
 }
 
-.teachers-title > span {
+.section-title .underlined {
   position: relative;
   display: inline-block;
 }
 
-.teachers-title > span::after {
+.section-title .underlined::after {
   content: '';
   position: absolute;
   left: -1px;
@@ -27,7 +25,7 @@
   height: 12px;
   border-radius: 8px;
   z-index: -1;
-  background-color: var(--light-green);
+  background-color: var(--light-gradient-green);
 }
 
 .section-teachers-description {
@@ -94,12 +92,12 @@
 
 @media (min-width: 768px) {
 
-  .teachers-title {
+  .section-title {
     font-size: 40px;
     line-height: 1.2;
   }
 
-  .teachers-title > span::after {
+  .section-title .underlined::after {
     bottom: 0px;
     height: 16px;
   }

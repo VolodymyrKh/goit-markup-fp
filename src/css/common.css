@@ -57,12 +57,9 @@ img {
 
 .section-title {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--black);
-  text-transform: capitalize;
 }
 
 .section {

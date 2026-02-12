@@ -98,6 +98,23 @@ img {
   background-color: var(--dark-green);
 }
 
+.title-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.title-highlight::after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  bottom: -2px;
+  width: 102%;
+  height: 12px;
+  border-radius: 8px;
+  z-index: -1;
+  background-color: var(--light-green);
+}
+
 @media screen and (min-width: 768px) {
   .section-title {
     font-size: 40px;

@@ -2,23 +2,6 @@
   text-align: center;
 }
 
-.teachers-title > span {
-  position: relative;
-  display: inline-block;
-}
-
-.teachers-title > span::after {
-  content: '';
-  position: absolute;
-  left: -1px;
-  bottom: -2px;
-  width: 102%;
-  height: 12px;
-  border-radius: 8px;
-  z-index: -1;
-  background-color: var(--light-green);
-}
-
 .teachers-list {
   display: flex;
   flex-direction: column;

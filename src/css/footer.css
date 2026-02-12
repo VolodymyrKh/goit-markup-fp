@@ -81,8 +81,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  stroke: var(--white);
-  transition: 0.3s;
+  fill: var(--white);
+
 }
 
 .footer-bottom {
@@ -196,13 +196,13 @@
   }
 
   .footer-media-link{
-    transition: color var(--transition-duration-and-func), border var(--transition-duration-and-func) ;
+    transition: color var(--transition-duration-and-func), border-color var(--transition-duration-and-func), fill var(--transition-duration-and-func) ;
   }
 
   .footer-media-link:hover,
   .footer-media-link:focus {
-    color: var(--green);
-    border: var(--green);
+    fill: var(--green);
+    border-color: var(--green);
   }
 
   .bottom-link {

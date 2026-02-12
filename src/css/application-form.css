@@ -1,4 +1,8 @@
 @media screen {
+  .app-form-thumb {
+    display: none;
+  }
+
   .app-form {
     margin-inline: auto;
   }
@@ -125,5 +129,24 @@
 
   .app-form-section-description {
     max-width: 586px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .app-form-wrapper {
+    display: flex;
+    gap: 32px;
+  }
+
+  .app-form-thumb {
+    flex: 1;
+    display: block;
+    background-color: var(--green);
+    border-radius: 30px;
+  }
+
+  .app-form {
+    flex: 1;
+    max-width: 500px;
   }
 }

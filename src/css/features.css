@@ -90,7 +90,7 @@
     color: var(--white);
     background-color: var(--green);
     border-radius: 50%;
-    
+
 }
 
 .feature-icon{
@@ -100,19 +100,10 @@
     stroke: currentColor;
 }
 
-.application-link{
+.application-link {
     display: inline-block;
-    width: 295px;
-    padding: 14px 58px;
-    margin: 0 auto;
+    max-width: 295px;
     text-align: center;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0;
-    border-radius: 12px;
-    background-color: var(--green);
-    color: var(--white);
-    border: none;
 }
 
 @media screen and (min-width: 768px){
@@ -166,13 +157,8 @@
         }
 
     .application-link {
-        width: 306px;
-        padding: 16px 64px;
-        text-align: center;
-        font-size: 18px;
-        line-height: 1.6;
+        max-width: 306px;
     }
-        
 }
 
 @media screen and (min-width: 1280px){
@@ -203,14 +189,4 @@
     .feature-item:not(:last-child) {
         margin-bottom: 18px;
     }
-
-    .application-link{
-        transition: background-color var(--transition-duration-and-func);
-    }
-
-    .application-link:hover,
-    .application-link:focus{
-        background-color: var(--dark-green);
-    }
-   
 }

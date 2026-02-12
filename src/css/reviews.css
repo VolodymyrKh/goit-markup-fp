@@ -1,3 +1,5 @@
+/* ===== REVIEWS ===== */
+
 .reviews {
   text-align: center;
 }
@@ -14,53 +16,58 @@
   opacity: 0.7;
 }
 
+/* List: layout only (reset is in common.css) */
 .reviews-list {
-  display: flex;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: grid;
+  gap: 32px;
 }
 
-/* Desktop: 3 cards */
-@media screen and (min-width: 1024px) {
-  .reviews-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Tablet: 2 cards */
-@media screen and (max-width: 1023px) {
-  .reviews-item:nth-child(n + 3) {
-    display: none;
-  }
-}
-
-/* Mobile: 1 card */
+/* ---- Mobile (<= 767): 1 card, single row ---- */
 @media screen and (max-width: 767px) {
+  .reviews-list {
+    grid-template-columns: 1fr;
+  }
+
   .reviews-item:nth-child(n + 2) {
     display: none;
   }
 }
 
-.reviews-card {
-  height: 100%;
-  padding: 24px;
-  border-radius: 16px;
-  background: #f5f5f5;
-  text-align: left;
+/* ---- Tablet (768 - 1279): 2 cards, single row ---- */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .reviews-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-item:nth-child(n + 3) {
+    display: none;
+  }
 }
 
+/* ---- Desktop (>= 1280): 3 cards, single row ---- */
+@media screen and (min-width: 1280px) {
+  .reviews-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.reviews-card {
+  height: 100%;
+  border-radius: 16px;
+  background: #f5f5f5; /* Chack later: replace with variable if exists */
+}
+
+/* Badge paddings are different from text paddings */
 .reviews-badge {
   display: flex;
   align-items: center;
   gap: 12px;
 
+  margin: 24px 24px 16px;
   padding: 12px 16px;
-  margin-bottom: 16px;
 
   border-radius: 16px;
-  background: #39b36b;
+  background: #39b36b; /* Check later: replace with variable if exists */
 }
 
 .reviews-avatar {
@@ -85,14 +92,10 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* Text padding differs from badge */
 .reviews-text {
-  margin: 0;
+  margin: 0 24px 24px 24px;
   font-size: 14px;
   line-height: 1.7;
   opacity: 0.8;
 }
-
-.reviews-item {
-  flex: 1 1 0;
-}
-

@@ -64,7 +64,6 @@ img {
   font-size: 32px;
   line-height: 1.13;
   letter-spacing: -0.02em;
-  
   display: block;
   text-align: center;
   margin-bottom: 16px;
@@ -96,7 +95,7 @@ img {
   }
 
   .section-title .underlined::after {
-    bottom: 0px;
-    height: 16px;
+    bottom: -3px;
+    height: 20px;
   }
-}  
+}

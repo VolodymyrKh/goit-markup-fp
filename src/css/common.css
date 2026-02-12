@@ -22,10 +22,21 @@ ol {
   list-style-type: none;
 }
 
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
 button {
   padding: 0;
   border: none;
   cursor: pointer;
+  font: inherit;
+  color: inherit;
 }
 
 body {

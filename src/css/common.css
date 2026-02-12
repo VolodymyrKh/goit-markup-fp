@@ -38,7 +38,7 @@ body {
 @media screen and (width >= 768px) {
   body {
     font-size: 18px;
-    line-height: 1.66667;
+    line-height: 1.67;
   }
 }
 
@@ -73,10 +73,16 @@ img {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 @media screen and (width >= 768px) {
   .section {
-    padding: 100px 0;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (width >= 1280px) {
+  .section {
+    padding: 75px 0;
   }
 }

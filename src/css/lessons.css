@@ -80,6 +80,10 @@
   .container {
     gap: 64px;
   }
+  .undertitle {
+    max-width: 665px;
+    margin: 0 auto;
+  }
   .plan-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -98,5 +102,11 @@
   }
   .plan-btn {
     padding: 16px;
+  }
+}
+@media screen and (width >= 1280px) {
+  .plan-list-item {
+    padding: 32px;
+    width: calc((100% - 2 * 32px) / 3);
   }
 }

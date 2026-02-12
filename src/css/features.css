@@ -8,6 +8,7 @@
 
 .features-subtitle{
     max-width: 295px;
+    margin-left: 20px;
     margin-bottom: 65px;
     font-size: 38px;
     line-height: 1.05;
@@ -122,6 +123,7 @@
 
      .features-subtitle{
         max-width: 100%;
+        margin-left: 32px;
         margin-bottom: 83px;
         font-size: 60px;
         line-height: 1.17;
@@ -179,6 +181,7 @@
     }
 
     .features-subtitle{
+        margin-left: 64px;
         max-width: 776px;
         margin-bottom: 133px;
     }

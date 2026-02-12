@@ -200,5 +200,14 @@
     .feature-item:not(:last-child) {
         margin-bottom: 18px;
     }
+
+    .application-link{
+        transition: background-color var(--transition-duration-and-func);
+    }
+
+    .application-link:hover,
+    .application-link:focus{
+        background-color: var(--dark-green);
+    }
    
 }

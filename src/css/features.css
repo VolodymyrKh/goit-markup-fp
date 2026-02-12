@@ -1,0 +1,204 @@
+.features-container{
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 64px;
+    background: linear-gradient(68deg, var(--green), var(--light-gradient-green));
+    border-radius: 16px;
+}
+
+.features-subtitle{
+    max-width: 295px;
+    margin-bottom: 65px;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: 0;
+    color: var(--white);
+}
+
+.accent{
+    color: var(--light-gradient-green);
+}
+
+.features-card{
+    position: relative;
+    color: var(--black);
+}
+
+.features-card-content{
+    position: relative;
+    padding: 40px 20px;
+    border-radius: 16px;
+    background-color: var(--white);
+    z-index: 5;
+}
+
+.features-card::before,
+.features-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.features-card::before{
+    background-color: rgba(255 255 255 / 0.5);
+    transform: rotate(11deg);
+}
+
+.features-card::after{
+    background-color: var(--light-green);
+    transform: rotate(-11deg);
+}
+
+.feature-card-title{
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.feature-list{
+    margin-bottom: 20px;
+}
+
+.feature-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.02em;
+}
+
+.feature-item:not(:last-child){
+    margin-bottom: 16px;
+}
+
+
+.feature-icon-wrapper{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 50%;
+    
+}
+
+.feature-icon{
+    width: 16px;
+    height: 12px;
+    fill: none;
+    stroke: currentColor;
+}
+
+.application-link{
+    display: inline-block;
+    width: 295px;
+    padding: 14px 58px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0;
+    border-radius: 12px;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+}
+
+@media screen and (min-width: 768px){
+    .features-container{
+        padding-top: 64px;
+        padding-bottom: 93px;
+    }
+
+     .features-subtitle{
+        max-width: 100%;
+        margin-bottom: 83px;
+        font-size: 60px;
+        line-height: 1.17;
+    }
+
+    .features-card-content {
+        padding: 65px 32px;
+        background-image: url(../img/books.png);
+        background-repeat: no-repeat;
+        background-position: bottom 63px right -15%;
+    }
+
+
+    .feature-card-title {
+        margin-bottom: 32px;
+        font-size: 40px;
+    }
+
+    .feature-list {
+        width: 451px;
+        margin-bottom: 32px;
+    }
+
+    .feature-item {
+        gap: 16px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .feature-icon-wrapper {
+        width: 28px;
+        height: 28px;
+    }
+
+    .feature-icon {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke: currentColor;
+        }
+
+    .application-link {
+        width: 306px;
+        padding: 16px 64px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+        
+}
+
+@media screen and (min-width: 1280px){
+    .features-container{
+        padding-bottom: 142px;
+    }
+
+    .features-subtitle{
+        max-width: 776px;
+        margin-bottom: 133px;
+    }
+
+    .features-card-content {
+        padding: 64px;
+        background-position: bottom 79px right;
+    }
+
+    .feature-card-title {
+        margin-bottom: 40px;
+    }
+
+    .feature-list {
+        width: 654px;
+        margin-bottom: 39px;
+    }
+
+    .feature-item:not(:last-child) {
+        margin-bottom: 18px;
+    }
+   
+}

@@ -163,6 +163,29 @@
     display: block;
     background-color: var(--green);
     border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .app-form-thumb-image {
+    margin-bottom: 20px;
+  }
+
+  .app-form-thumb-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .app-form-thumb-description {
+    padding-inline: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(var(--white-rgb) / 0.7);
   }
 
   .app-form {

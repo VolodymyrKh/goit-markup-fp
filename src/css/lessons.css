@@ -1,0 +1,126 @@
+.lessons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & .underlined {
+    text-transform: none;
+  }
+}
+.undertitle {
+  text-align: center;
+}
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.plan-list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  border-radius: 16px;
+  background-color: var(--white);
+  border: 1px solid var(--green);
+  color: var(--black);
+
+  & .plan-description {
+    color: var(--primary-text-color);
+  }
+}
+.plan-list-item:nth-child(2n) {
+  background-color: var(--green);
+  color: var(--white);
+
+  & .plan-description {
+    color: color-mix(in srgb, var(--white) 70%, transparent);
+  }
+
+  & .plan-btn {
+    border: 1px solid color-mix(in srgb, var(--white) 40%, transparent);
+  }
+
+  & .plan-btn:hover {
+    background-color: var(--white);
+    color: var(--green);
+  }
+}
+.plan-tag {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.plan-price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.125;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.plan-description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.plan-btn {
+  border-radius: 12px;
+  padding: 14px;
+  width: 100%;
+  background-color: var(--green);
+  text-align: center;
+  font-weight: 700;
+  color: var(--white);
+  transition: var(--transition-duration-and-func);
+  cursor: pointer;
+}
+.plan-btn:hover {
+  background-color: var(--dark-green);
+}
+@media screen and (width >= 768px) {
+  .lessons-container {
+    gap: 64px;
+  }
+  .undertitle {
+    max-width: 665px;
+    margin: 0 auto;
+  }
+  .plan-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .plan-list-item {
+    padding: 32px 16px;
+    width: calc((100% - 32px) / 2);
+  }
+  .plan-price {
+    line-height: 1.375;
+    margin-bottom: 32px;
+  }
+  .plan-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+  .plan-btn {
+    padding: 16px;
+    line-height: 1.55;
+  }
+}
+@media screen and (width >= 1280px) {
+  .plan-price {
+    margin-bottom: 16px;
+  }
+  .plan-list-item {
+    padding: 32px;
+    width: calc((100% - 2 * 32px) / 3);
+  }
+}

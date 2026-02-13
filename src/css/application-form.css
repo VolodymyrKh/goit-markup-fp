@@ -16,13 +16,10 @@
     padding-left: 18px;
     outline: transparent;
     transition: border-color var(--transition-duration-and-func);
-  }
-
-  .form-input::placeholder {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.29;
-    color: var(--black);
+    line-height: 1.71;
+    color: rgba(18, 20, 23, 0.8);
   }
 
   .form-input:focus {
@@ -109,7 +106,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
-    color: rgba(18, 20, 23, 0.5);
+    /*color: rgba(18, 20, 23, 0.5);*/
   }
 
   .form-privacy-policy-link {
@@ -118,12 +115,18 @@
 }
 
 @media screen and (min-width: 768px) {
+  .app-form-section-description {
+    max-width: 586px;
+  }
+
   .app-form {
     max-width: 500px;
   }
 
   .form-input {
     height: 56px;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .form-text-area {
@@ -137,8 +140,16 @@
     margin-bottom: 32px;
   }
 
-  .app-form-section-description {
-    max-width: 586px;
+  .app-form-teacher-group-title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .form-privacy-policy {
+    font-size: 14px;
+    line-height: 1.71;
+
   }
 }
 

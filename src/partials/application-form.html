@@ -1,5 +1,106 @@
-<section class="section">
+<section id="app-form-section" class="section">
   <div class="container">
-    <h2 class="section-title">Leave an application</h2>
+    <h2 class="section-title">Leave an <span class="underlined">application</span></h2>
+
+    <p class="section-description app-form-section-description">
+      Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly
+    </p>
+
+    <div class="app-form-wrapper">
+      <div class="app-form-thumb">
+        <img
+          class="app-form-thumb-image"
+          src="./img/application-form/app-form-girl.png"
+          srcset="./img/application-form/app-form-girl.png 1x, ./img/application-form/app-form-girl@2x.png 2x"
+          width="492"
+          height="392"
+          alt="Curious girl">
+
+        <div class="app-form-thumb-title">1000</div>
+        <div class="app-form-thumb-description">
+          of our online English language lessons! This journey has been full of discovery, growth and unforgettable
+          moments, and we are happy to share this joyful event with you.
+        </div>
+      </div>
+
+      <form action="#" class="app-form">
+        <label for="name" class="visually-hidden">Name</label>
+        <input
+          id="name"
+          class="form-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          minlength="2"
+          maxlength="50"
+          pattern="[A-Za-zА-Яа-яІіЇїЄє\s'-]+"
+          title="Name should contain only letters, spaces, apostrophes, or hyphens (2-50 characters)"
+          required
+        />
+
+        <label for="email" class="visually-hidden">Email</label>
+        <input
+          id="email"
+          class="form-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+
+        <label for="phone" class="visually-hidden">Phone</label>
+        <input
+          id="phone"
+          class="form-input"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          pattern="\+?[0-9]{7,15}"
+          title="Phone number should contain only digits and may start with a plus sign (7-15 digits)"
+          required
+        />
+
+        <label for="comment" class="visually-hidden">Comment</label>
+        <textarea
+          id="comment"
+          class="form-input form-text-area"
+          name="message"
+          placeholder="Comment"
+          minlength="10"
+          maxlength="500"
+        ></textarea>
+
+        <fieldset class="app-form-teacher-group">
+          <legend class="app-form-teacher-group-title">Choose a teacher</legend>
+
+          <label class="radio-label">
+            <input class="radio-input" type="radio" name="teacher" value="maria" checked>
+            <span class="custom-radio"></span>
+            Maria
+          </label>
+          <label class="radio-label">
+            <input class="radio-input" type="radio" name="teacher" value="artem">
+            <span class="custom-radio"></span>
+            Artem
+          </label>
+          <label class="radio-label">
+            <input class="radio-input" type="radio" name="teacher" value="ilona">
+            <span class="custom-radio"></span>
+            Ilona
+          </label>
+          <label class="radio-label">
+            <input class="radio-input" type="radio" name="teacher" value="volodymyr">
+            <span class="custom-radio"></span>
+            Volodymyr
+          </label>
+        </fieldset>
+
+        <button type="submit" class="button app-form-submit-button">Send</button>
+        <p class="form-privacy-policy">
+          By clicking on “Send” button, you agree to our <a class="form-privacy-policy-link" href="/">Privacy Policy</a>,
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
   </div>
 </section>

@@ -99,15 +99,9 @@
 }
 
 .application-link {
-  display: inline-block;
-  padding: 14px 58px;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0;
-  border-radius: 12px;
-  background-color: var(--green);
-  color: var(--white);
-  border: none;
+    display: inline-block;
+    max-width: 295px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,13 +173,9 @@
     stroke: currentColor;
   }
 
-  .application-link {
-    width: 306px;
-    padding: 16px 64px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-  }
+    .application-link {
+        max-width: 306px;
+    }
 }
 
 @media screen and (min-width: 1280px) {

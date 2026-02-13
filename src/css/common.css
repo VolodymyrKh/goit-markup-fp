@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -22,12 +26,25 @@ ol {
   list-style-type: none;
 }
 
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
 button {
+  padding: 0;
+  border: none;
   cursor: pointer;
+  font: inherit;
+  color: inherit;
 }
 
 body {
-  font-family: var(--primary-font);
+  font-family: var(--primary-font), sans-serif;
   background-color: var(--white);
   font-weight: 400;
   font-size: 14px;
@@ -70,6 +87,16 @@ img {
   color: var(--black);
 }
 
+.section-description {
+  margin-inline: auto;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
 .section-title .underlined {
   position: relative;
   display: inline-block;
@@ -85,6 +112,23 @@ img {
   border-radius: 8px;
   z-index: -1;
   background-color: var(--light-gradient-green);
+}
+
+.button {
+  border-radius: 12px;
+  padding-block: 14px;
+  width: 100%;
+  background-color: var(--green);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white);
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--dark-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -103,9 +147,21 @@ img {
     line-height: 1.2;
   }
 
+  .section-description {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 64px;
+  }
+
   .section-title .underlined::after {
     bottom: -3px;
     height: 20px;
+  }
+
+  .button {
+    padding-block: 16px;
+    font-size: 18px;
+    line-height: 1.56;
   }
 }
 

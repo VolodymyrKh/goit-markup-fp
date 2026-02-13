@@ -1,35 +1,3 @@
-.teachers {
-  text-align: center; 
-}
-
-.teachers-title {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.13;
-  letter-spacing: -0.02em;
-  margin-bottom: 16px;
-  display: inline-block;
-  color: var(--black);
-  text-align: center;
-}
-
-.teachers-title > span {
-  position: relative;
-  display: inline-block;
-}
-
-.teachers-title > span::after {
-  content: '';
-  position: absolute;
-  left: -1px;
-  bottom: -2px;
-  width: 102%;
-  height: 12px;
-  border-radius: 8px;
-  z-index: -1;
-  background-color: var(--light-green);
-}
-
 .section-teachers-description {
   margin-left: auto;
   margin-right: auto;
@@ -65,12 +33,13 @@
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  transition: transform var(--transition-duration-and-func),
+   box-shadow var(--transition-duration-and-func);
 }
 
 .teacher-card:hover .teacher-photo {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -94,16 +63,6 @@
 
 @media (min-width: 768px) {
 
-  .teachers-title {
-    font-size: 40px;
-    line-height: 1.2;
-  }
-
-  .teachers-title > span::after {
-    bottom: 0px;
-    height: 16px;
-  }
-
   .section-teachers-description {
     font-size: 18px;
     line-height: 1.67;
@@ -116,7 +75,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px; 
+    gap: 32px;
     align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
@@ -139,7 +98,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px; 
+    gap: 32px;
     align-items: flex-start;
     margin-left: auto;
     margin-right: auto;

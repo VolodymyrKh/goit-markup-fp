@@ -1,5 +1,5 @@
 .teachers {
-  text-align: center; 
+  text-align: center;
 }
 
 .teachers-title {
@@ -65,12 +65,13 @@
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  transition: transform var(--transition-duration-and-func),
+   box-shadow var(--transition-duration-and-func);
 }
 
 .teacher-card:hover .teacher-photo {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -116,7 +117,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px; 
+    gap: 32px;
     align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
@@ -139,7 +140,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px; 
+    gap: 32px;
     align-items: flex-start;
     margin-left: auto;
     margin-right: auto;

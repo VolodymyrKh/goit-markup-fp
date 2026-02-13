@@ -1,0 +1,115 @@
+/* ===== REVIEWS ===== */
+
+.reviews-subtitle {
+  text-align: center;
+}
+
+.reviews-subtitle {
+  margin-bottom: 40px;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 32px;
+}
+
+/* Card */
+.reviews-card {
+  height: 100%;
+  border-radius: 30px;
+  background: #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Badge */
+.reviews-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 20px 20px 20px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: #39b36b;
+}
+
+.reviews-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.reviews-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.reviews-role {
+  margin: 2px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.reviews-text {
+  margin: 0 34px;
+}
+
+/* ---- Mobile (<= 767): 1 card + title/subtitle sizes ---- */
+@media screen and (max-width: 767px) {
+  .reviews-list {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-item:nth-child(n + 2) {
+    display: none;
+  }
+}
+
+/* ---- Tablet (768 - 1279): 2 cards ---- */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .reviews-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  .reviews-item:nth-child(n + 3) {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .reviews-subtitle {
+    font-size: 18px;
+    line-height: 1.67;
+    max-width: 647px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+
+  .reviews-card {
+    padding-top: 32px;
+  }
+
+  .reviews-badge {
+    margin: 0 16px 20px;
+  }
+
+  .reviews-text {
+  margin: 0 32px;
+  }
+}
+
+/* ---- Desktop (>= 1280): 3 cards ---- */
+@media screen and (min-width: 1280px) {
+  .reviews-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

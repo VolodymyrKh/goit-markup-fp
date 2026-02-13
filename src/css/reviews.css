@@ -1,19 +1,49 @@
 /* ===== REVIEWS ===== */
 
 .reviews {
+  text-align: left;
+}
+
+.reviews-title,
+.reviews-subtitle {
   text-align: center;
 }
 
 .reviews-title {
   margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: none;
+}
+
+.reviews-title-accent {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.reviews-title-accent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+
+  height: 20px;
+  background: #BEE8CC;
+  border-radius: 8px;
+
+  z-index: -1;
 }
 
 .reviews-subtitle {
   max-width: 720px;
   margin: 0 auto 40px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   opacity: 0.7;
+  text-align: center;
 }
 
 /* List: layout only (reset is in common.css) */
@@ -26,6 +56,17 @@
 @media screen and (max-width: 767px) {
   .reviews-list {
     grid-template-columns: 1fr;
+  }
+
+  .reviews-title {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .reviews-subtitle {
+    font-size: 14px;
+    text-align: center;
   }
 
   .reviews-item:nth-child(n + 2) {
@@ -53,21 +94,21 @@
 
 .reviews-card {
   height: 100%;
-  border-radius: 16px;
-  background: #f5f5f5; /* Chack later: replace with variable if exists */
+  border-radius: 30px;
+  background: #f5f5f5;
+  padding-top: 24px;
 }
 
-/* Badge paddings are different from text paddings */
 .reviews-badge {
   display: flex;
   align-items: center;
   gap: 12px;
 
-  margin: 24px 24px 16px;
+  margin: 0 24px 16px;
   padding: 12px 16px;
 
   border-radius: 16px;
-  background: #39b36b; /* Check later: replace with variable if exists */
+  background: #39b36b;
 }
 
 .reviews-avatar {
@@ -80,7 +121,8 @@
 
 .reviews-name {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -88,14 +130,14 @@
 .reviews-role {
   margin: 2px 0 0;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Text padding differs from badge */
 .reviews-text {
   margin: 0 24px 24px 24px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
   opacity: 0.8;
 }

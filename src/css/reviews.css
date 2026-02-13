@@ -1,9 +1,5 @@
 /* ===== REVIEWS ===== */
 
-.reviews {
-  text-align: left;
-}
-
 .reviews-title,
 .reviews-subtitle {
   text-align: center;
@@ -11,9 +7,7 @@
 
 .reviews-title {
   margin-bottom: 16px;
-  font-size: 40px;
   font-weight: 700;
-  line-height: 48px;
   text-transform: none;
 }
 
@@ -28,7 +22,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -4px;
+  bottom: -6px;
 
   height: 20px;
   background: #BEE8CC;
@@ -37,61 +31,22 @@
   z-index: -1;
 }
 
+/* subtitle default (tablet/desktop) */
 .reviews-subtitle {
   max-width: 720px;
   margin: 0 auto 40px;
   font-size: 18px;
   line-height: 1.6;
   opacity: 0.7;
-  text-align: center;
 }
 
-/* List: layout only (reset is in common.css) */
+/* List layout only (reset is in common.css) */
 .reviews-list {
   display: grid;
   gap: 32px;
 }
 
-/* ---- Mobile (<= 767): 1 card, single row ---- */
-@media screen and (max-width: 767px) {
-  .reviews-list {
-    grid-template-columns: 1fr;
-  }
-
-  .reviews-title {
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-  }
-
-  .reviews-subtitle {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .reviews-item:nth-child(n + 2) {
-    display: none;
-  }
-}
-
-/* ---- Tablet (768 - 1279): 2 cards, single row ---- */
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .reviews-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .reviews-item:nth-child(n + 3) {
-    display: none;
-  }
-}
-
-/* ---- Desktop (>= 1280): 3 cards, single row ---- */
-@media screen and (min-width: 1280px) {
-  .reviews-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
+/* Card */
 .reviews-card {
   height: 100%;
   border-radius: 30px;
@@ -99,6 +54,7 @@
   padding-top: 24px;
 }
 
+/* Badge */
 .reviews-badge {
   display: flex;
   align-items: center;
@@ -127,6 +83,7 @@
   color: #ffffff;
 }
 
+/* role must be 12px for all breakpoints */
 .reviews-role {
   margin: 2px 0 0;
   font-size: 12px;
@@ -135,9 +92,59 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* Card text must be left aligned */
 .reviews-text {
-  margin: 0 24px 24px 24px;
+  margin: 0 24px 24px;
   font-size: 16px;
   line-height: 1.7;
   opacity: 0.8;
+  text-align: left;
+}
+
+/* ---- Mobile (<= 767): 1 card + title/subtitle sizes ---- */
+@media screen and (max-width: 767px) {
+  .reviews-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .reviews-subtitle {
+    font-size: 14px; /* requirement for mobile */
+  }
+
+  .reviews-list {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-item:nth-child(n + 2) {
+    display: none;
+  }
+}
+
+/* ---- Tablet (768 - 1279): 2 cards ---- */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .reviews-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .reviews-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-item:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+/* ---- Desktop (>= 1280): 3 cards ---- */
+@media screen and (min-width: 1280px) {
+  .reviews-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .reviews-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

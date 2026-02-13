@@ -1,4 +1,4 @@
-.container {
+.lessons-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -85,7 +85,7 @@
   background-color: var(--dark-green);
 }
 @media screen and (width >= 768px) {
-  .container {
+  .lessons-container {
     gap: 64px;
   }
   .undertitle {

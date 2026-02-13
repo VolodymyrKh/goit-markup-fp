@@ -1,5 +1,11 @@
-.teachers {
+.section-teachers-description {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.71;
   text-align: center;
+  color: var(--primary-text-color);
 }
 
 .teachers-list {
@@ -11,7 +17,7 @@
 }
 
 .teacher-card {
-  background-color: var(--white);
+  background-color: var(--color-white);
   color: rgba(18, 20, 23, 0.5);
   border-radius: 16px;
   display: flex;
@@ -55,12 +61,11 @@
 }
 
 @media (min-width: 768px) {
-  .teachers-title > span::after {
-    bottom: 0px;
-    height: 16px;
-  }
 
   .section-teachers-description {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 64px;
     max-width: 709px;
   }
 

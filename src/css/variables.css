@@ -2,12 +2,14 @@
   --primary-font: "Manrope";
 
 	--black: rgb(18 20 23);
+	--black-rgb: 18 20 23;
 	--dark-green: rgb(56 174 95);
 	--green: rgb(77 194 116);
 	--light-green: rgb(212 253 225);
 	--light-gradient-green: rgb(190 232 204);
 	--gray: rgb(243 245 246);
 	--white: rgb(255 255 255);
+	--white-rgb: 255 255 255;
   --primary-text-color: rgba(18 20 23 / 0.5);
 
   --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);

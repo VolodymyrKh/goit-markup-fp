@@ -83,6 +83,16 @@ img {
   color: var(--black);
 }
 
+.section-description {
+  margin-inline: auto;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
 .section-title .underlined {
   position: relative;
   display: inline-block;
@@ -133,9 +143,21 @@ img {
     line-height: 1.2;
   }
 
+  .section-description {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 64px;
+  }
+
   .section-title .underlined::after {
     bottom: -3px;
     height: 20px;
+  }
+
+  .button {
+    padding-block: 16px;
+    font-size: 18px;
+    line-height: 1.56;
   }
 }
 

@@ -21,7 +21,7 @@
 
     <title>English excellence</title>
     <script type="module" crossorigin src="/goit-markup-fp/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-markup-fp/assets/index-D8wVd14w.css">
+    <link rel="stylesheet" crossorigin href="/goit-markup-fp/assets/index-d0DP93AI.css">
   </head>
   <body>
     <header class="header-page">
@@ -50,7 +50,7 @@
       </ul>
     </nav>
 
-    <button class="mobile-menu-open-btn" type="button">
+    <button class="mobile-menu-open-btn" data-mob-menu-open type="button">
       <svg class="mobile-menu-open-btn-icon">
         <use href="/goit-markup-fp/assets/icons-BvoLBcA0.svg#icon-burger"></use>
       </svg>
@@ -58,21 +58,21 @@
 
     <ul class="header-socials">
       <li class="social-icons-item">
-        <a class="social-icons-link" href="https://www.facebook.com/goITclub/">
+        <a class="social-icons-link" href="https://www.facebook.com/goITclub/" target="_blank">
           <svg class="social-icon" width="28" height="28">
             <use href="/goit-markup-fp/assets/icons-BvoLBcA0.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="social-icons-item">
-        <a class="social-icons-link" href="https://www.instagram.com/goitclub/">
+        <a class="social-icons-link" href="https://www.instagram.com/goitclub/" target="_blank">
           <svg class="social-icon" width="28" height="28">
             <use href="/goit-markup-fp/assets/icons-BvoLBcA0.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
       <li class="social-icons-item">
-        <a class="social-icons-link" href="https://www.youtube.com/c/GoIT">
+        <a class="social-icons-link" href="https://www.youtube.com/c/GoIT" target="_blank">
           <svg class="social-icon" width="28" height="28">
             <use href="/goit-markup-fp/assets/icons-BvoLBcA0.svg#icon-youtube"></use>
           </svg>
@@ -102,7 +102,7 @@
   </div>
 </section>
 
-      <section class="section">
+      <section class="section" id="about-us">
   <div class="container about">
     <h2 class="section-title">About <span class="underlined">Us</span></h2>
     <p class="section-about-description">
@@ -480,6 +480,72 @@
   </div>
 </section>
 
+      <div class="mobile-menu" data-mobile-menu>
+  <div class="mobile-menu-container">
+    <nav class="nav-mobile">
+      <ul class="nav-list-mobile">
+        <li class="nav-mobile-item">
+          <a class="nav-mobile-link" href="#about-us">About us</a>
+        </li>
+        <li class="nav-mobile-item">
+          <a class="nav-mobile-link" href="#lessons">Our lessons</a>
+        </li>
+        <li class="nav-mobile-item">
+          <a class="nav-mobile-link" href="#teachers">Teachers</a>
+        </li>
+        <li class="nav-mobile-item">
+          <a class="nav-mobile-link" href="#reviews">Reviews</a>
+        </li>
+        <li class="nav-mobile-item">
+          <a class="nav-mobile-link" href="#app-form-section">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="mobile-socials">
+      <li class="mobile-socials-item">
+        <a
+          class="mobile-socials-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+        >
+          <svg class="mobile-socials-icon" width="28" height="28">
+            <use href="/goit-markup-fp/assets/icons-BvoLBcA0.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-socials-item">
+        <a
+          class="mobile-socials-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+        >
+          <svg class="mobile-socials-icon" width="28" height="28">
+            <use href="/goit-markup-fp/assets/icons-BvoLBcA0.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-socials-item">
+        <a
+          class="mobile-socials-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+        >
+          <svg class="mobile-socials-icon" width="28" height="28">
+            <use href="/goit-markup-fp/assets/icons-BvoLBcA0.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button class="mobile-menu-close-btn" data-mob-menu-close type="button">
+      <svg class="mobile-menu-close-btn-icon" width="32" height="32">
+        <use href="/goit-markup-fp/assets/icons-BvoLBcA0.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
 
     </main>
 
@@ -512,7 +578,7 @@
                 <a class="footer-nav-link" href="#about-us" >About us</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#our-lessons" >Our lessons</a>
+                <a class="footer-nav-link" href="#lessons" >Our lessons</a>
               </li>
               <li class="footer-nav-item">
                 <a class="footer-nav-link" href="#teachers" >Teachers</a>
@@ -521,7 +587,7 @@
                 <a class="footer-nav-link" href="#reviews" >Reviews</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#contact-us" >Contact us</a>
+                <a class="footer-nav-link" href="#app-form-section" >Contact us</a>
               </li>
             </ul>
           </nav>

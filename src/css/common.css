@@ -73,14 +73,14 @@ img {
 }
 
 .section {
-  padding: 40px 0;
+  padding: 76px 0 4px;
 }
 
 .section:first-child {
   padding-top: 8px;
 }
 
-.section:last-child {
+.section:last-of-type {
   padding-bottom: 80px;
 }
 
@@ -147,14 +147,14 @@ img {
   }
 
   .section {
-    padding: 50px 0;
+    padding: 100px 0 0;
   }
 
   .section:first-child {
     padding-top: 32px;
   }
 
-  .section:last-child {
+  .section:last-of-type {
     padding-bottom: 100px;
   }
 
@@ -182,8 +182,13 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+
+  .section-wrapper {
+    padding-top: 84px;
+  }
+
   .section {
-    padding: 75px 0;
+    padding: 100px 0 50px;
   }
 
   .section:first-child {
@@ -191,7 +196,7 @@ img {
     padding-bottom: 21px;
   }
 
-  .section:last-child {
+  .section:last-of-type {
     padding-bottom: 150px;
   }
 }

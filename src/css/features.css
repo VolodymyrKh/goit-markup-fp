@@ -1,216 +1,240 @@
-.features-container{
-    font-weight: 700;
-    padding-top: 40px;
-    padding-bottom: 64px;
-    background: linear-gradient(68deg, var(--green), var(--light-gradient-green));
-    border-radius: 16px;
+.features-content-wrapper {
+  font-weight: 700;
+  padding: 40px 20px 64px;
+  background: linear-gradient(68deg, var(--green), var(--light-gradient-green));
+  border-radius: 16px;
+  overflow: hidden;
 }
 
-.features-subtitle{
-    max-width: 295px;
-    margin-left: 20px;
-    margin-bottom: 65px;
-    font-size: 38px;
-    line-height: 1.05;
-    letter-spacing: 0;
-    color: var(--white);
+.features-subtitle {
+  max-width: 295px;
+  margin-bottom: 65px;
+  font-size: 38px;
+  line-height: 1.05;
+  letter-spacing: 0;
+  color: var(--white);
 }
 
-.accent{
-    color: var(--light-gradient-green);
+.accent {
+  color: var(--light-gradient-green);
 }
 
-.features-card{
-    position: relative;
-    color: var(--black);
+.features-card {
+  position: relative;
+  color: var(--black);
+  border-radius: 16px;
 }
 
-.features-card-content{
-    position: relative;
-    padding: 40px 20px;
-    border-radius: 16px;
-    background-color: var(--white);
-    z-index: 5;
+.features-card-content {
+  position: relative;
+  padding: 40px 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  z-index: 5;
 }
 
 .features-card::before,
-.features-card::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
+.features-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
 }
 
-.features-card::before{
-    background-color: rgba(255 255 255 / 0.5);
-    transform: rotate(11deg);
+.features-card::before {
+  background-color: rgba(255 255 255 / 0.5);
+  transform: rotate(11deg);
 }
 
-.features-card::after{
-    background-color: var(--light-green);
-    transform: rotate(-11deg);
+.features-card::after {
+  background-color: var(--light-green);
+  transform: rotate(-9deg);
 }
 
-.feature-card-title{
-    position: relative;
-    margin-bottom: 20px;
+.features-card-title {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.features-list {
+  margin-bottom: 20px;
+}
+
+.features-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+}
+
+.features-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.features-icon-wrapper {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 50%;
+}
+
+.features-icon {
+  width: 16px;
+  height: 12px;
+  fill: none;
+  stroke: currentColor;
+}
+
+.application-link {
+    display: inline-block;
+    max-width: 295px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features-content-wrapper {
+    padding: 64px 18px 93px;
+    border-radius: 30px;
+    overflow: visible;
+  }
+
+  .features-subtitle {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 83px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .features-card-content {
+    padding: 65px 32px 63px;
+    background-image: url(../img/books.png);
+    background-repeat: no-repeat;
+    background-position: bottom 63px right -12%;
+    border-radius: 30px;
+  }
+
+  .features-card,
+  .features-card::before,
+  .features-card::after {
+    border-radius: 30px;
+  }
+
+  .features-card::before {
+    left: 4px;
+    top: 5px;
+    transform: rotate(10deg);
+  }
+
+  .features-card::after {
+    left: 4px;
+    transform: rotate(-9deg);
+  }
+
+  .features-card-title {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+
+  .features-list {
+    width: 451px;
+    margin-bottom: 32px;
+  }
+
+  .features-item {
+    gap: 16px;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: -0.02em;
-}
+  }
 
-.feature-list{
-    margin-bottom: 20px;
-}
+  .features-icon-wrapper {
+    width: 28px;
+    height: 28px;
+  }
 
-.feature-item{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    line-height: 1.43;
-    letter-spacing: -0.02em;
-}
-
-.feature-item:not(:last-child){
-    margin-bottom: 16px;
-}
-
-
-.feature-icon-wrapper{
+  .features-icon {
     width: 20px;
     height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    color: var(--white);
-    background-color: var(--green);
-    border-radius: 50%;
-    
-}
-
-.feature-icon{
-    width: 16px;
-    height: 12px;
     fill: none;
     stroke: currentColor;
-}
-
-.application-link{
-    display: inline-block;
-    width: 295px;
-    padding: 14px 58px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0;
-    border-radius: 12px;
-    background-color: var(--green);
-    color: var(--white);
-    border: none;
-}
-
-@media screen and (min-width: 768px){
-    .features-container{
-        padding-top: 64px;
-        padding-bottom: 93px;
-    }
-
-     .features-subtitle{
-        max-width: 100%;
-        margin-left: 32px;
-        margin-bottom: 83px;
-        font-size: 60px;
-        line-height: 1.17;
-    }
-
-    .features-card-content {
-        padding: 65px 32px;
-        background-image: url(../img/books.png);
-        background-repeat: no-repeat;
-        background-position: bottom 63px right -15%;
-    }
-
-
-    .feature-card-title {
-        margin-bottom: 32px;
-        font-size: 40px;
-    }
-
-    .feature-list {
-        width: 451px;
-        margin-bottom: 32px;
-    }
-
-    .feature-item {
-        gap: 16px;
-        font-size: 20px;
-        line-height: 1.2;
-    }
-
-    .feature-icon-wrapper {
-        width: 28px;
-        height: 28px;
-    }
-
-    .feature-icon {
-        width: 20px;
-        height: 20px;
-        fill: none;
-        stroke: currentColor;
-        }
+  }
 
     .application-link {
-        width: 306px;
-        padding: 16px 64px;
-        text-align: center;
-        font-size: 18px;
-        line-height: 1.6;
+        max-width: 306px;
     }
-        
 }
 
-@media screen and (min-width: 1280px){
-    .features-container{
-        padding-bottom: 142px;
-    }
+@media screen and (min-width: 1280px) {
+  .features-container {
+    max-width: 1280px;
+  }
 
-    .features-subtitle{
-        margin-left: 0;
-        max-width: 776px;
-        margin-bottom: 133px;
-    }
+  .features-content-wrapper {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 142px;
+  }
 
-    .features-card-content {
-        padding: 64px;
-        background-position: bottom 79px right;
-    }
+  .features-subtitle {
+    margin-left: 0;
+    max-width: 776px;
+    margin-bottom: 133px;
+  }
 
-    .feature-card-title {
-        margin-bottom: 40px;
-    }
+  .features-card-content {
+    padding: 64px;
+    background-position: bottom 79px right;
+  }
 
-    .feature-list {
-        width: 654px;
-        margin-bottom: 39px;
-    }
+  .features-card::before {
+    width: 1011px;
+    height: 402px;
+    top: 45px;
+    left: 4px;
+    transform: rotate(11deg);
+  }
 
-    .feature-item:not(:last-child) {
-        margin-bottom: 18px;
-    }
+  .features-card::after {
+    width: 1050px;
+    height: 463px;
+    left: -25px;
+    top: 12px;
+    transform: rotate(-8deg);
+  }
 
-    .application-link{
-        transition: background-color var(--transition-duration-and-func);
-    }
+  .features-card-title {
+    margin-bottom: 40px;
+  }
 
-    .application-link:hover,
-    .application-link:focus{
-        background-color: var(--dark-green);
-    }
-   
+  .features-list {
+    width: 654px;
+    margin-bottom: 39px;
+  }
+
+  .features-item:nth-child(2) {
+    max-width: 581px;
+  }
+
+  .application-link {
+    transition: background-color var(--transition-duration-and-func);
+  }
+
+  .application-link:hover,
+  .application-link:focus {
+    background-color: var(--dark-green);
+  }
 }

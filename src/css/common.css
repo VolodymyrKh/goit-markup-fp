@@ -182,11 +182,6 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-
-  .section-wrapper {
-    padding-top: 84px;
-  }
-
   .section {
     padding: 100px 0 50px;
   }
